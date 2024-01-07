@@ -5,6 +5,10 @@ body {
     font-family: Lato, sans-serif;
 }
 
+h1 {
+    margin: 0;
+}
+
 .header_section {
     width: 500px;
     margin: 0 auto;
@@ -34,6 +38,7 @@ body {
 
 .add_element_row {
     display: flex;
+    margin-top: 20px;
 }
 
 ul {
@@ -42,7 +47,7 @@ ul {
 }
 
 li,
-h3 {
+h2 {
     list-style: none;
 }
 
@@ -66,8 +71,7 @@ button:hover {
 }
 
 /* Heading */
-h3,
-label[for="new_task"] {
+h2 {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -114,7 +118,7 @@ li {
     align-items: center;
 }
 
- li>* {
+li>* {
     vertical-align: middle;
 }
 
