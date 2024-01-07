@@ -26,19 +26,19 @@ body {
     }
 }
 
-.centered_main_page_element {
+.main_section {
     display: block;
     width: 500px;
     margin: 0 auto 0;
 }
 
-.task {
+.task_name {
     width: 56%;
     display: inline-block;
     flex-grow: 1
 }
 
-.task_row_wrapper {
+.add_element_row {
     display: flex;
 }
 
@@ -140,13 +140,13 @@ li>input[type="text"] {
     width: 226px
 }
 
-button.delete img {
+button.delete_task img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+button.delete_task img:hover {
     transform: rotateZ(0);
 }
 
