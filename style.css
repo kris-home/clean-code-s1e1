@@ -31,7 +31,7 @@ body {
 .task_name {
     width: 56%;
     display: inline-block;
-    flex-grow: 1
+    flex-grow: 1;
 }
 
 .add_element_row {
@@ -111,15 +111,14 @@ li {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* li>* {
+ li>* {
     vertical-align: middle;
-} */
+}
 
 input[type="checkbox"] {
     margin: 0 10px;
@@ -133,7 +132,7 @@ label {
 }
 
 input[type="text"] {
-    width: 226px
+    width: 226px;
 }
 
 .delete_task img {
@@ -154,12 +153,12 @@ input[type="text"] {
 
 /* Edit Task */
 li input[type="text"] {
-    display: none
+    display: none;
 }
 
 .edit_mode input[type="text"] {
     display: inline-block;
-    width: 224px
+    width: 224px;
 }
 
 .edit_mode label {
