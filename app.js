@@ -10,7 +10,6 @@ var addButton = document.getElementsByTagName("button")[0];//first button
 var incompleteTaskHolder = document.getElementById("todo_item");//ul of #todo_item
 var completedTasksHolder = document.getElementById("completed_tasks");//completed_tasks
 
-
 //New task list item
 var createNewTaskElement = function (taskString) {
     var listItem = document.createElement("li");
@@ -27,7 +26,6 @@ var createNewTaskElement = function (taskString) {
     var deleteButtonImg = document.createElement("img");//delete button image
     label.innerText = taskString;
     label.className = 'task_name';
-
     //Each elements, needs appending
     checkBox.type = "checkbox";
     editInput.type = "text";
@@ -37,7 +35,6 @@ var createNewTaskElement = function (taskString) {
     deleteButton.className = "delete_task";
     deleteButtonImg.src = './remove.svg';
     deleteButton.appendChild(deleteButtonImg);
-
     //and appending.
     listItem.appendChild(checkBox);
     listItem.appendChild(label);
@@ -111,8 +108,6 @@ var taskIncomplete = function () {
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskCompleted);
 }
-
-
 
 var ajaxRequest = function () {
     console.log("AJAX Request");
