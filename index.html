@@ -8,11 +8,11 @@
   >
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
-<body>
+<body class="body">
   <header class="header">
     <section class="header-section">
       <h1 class="header-section__h1">
-        <img class="header-section__img" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
+        <img class="header-section__img section__img" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
       </h1>
       <a 
       class="header-section__info" 
@@ -22,45 +22,45 @@
   </header>
   <main class="main">
     <section class="add-section">
-      <h2 class="add-section__h2">Add Item</h2>
+      <h2 class="add-section__h2 section__h2">Add Item</h2>
       <div class="add-section__row">
-        <input id="new-task" class="task-name new-task" type="text">
-        <button>Add</button>
+        <input class="add-section__new-task section__inp section__inp-text task-name new-task" id="new-task" type="text">
+        <button class="add-section__btn section__btn">Add</button>
       </div>
     </section>
     <section class="incompl-section">
-      <h2 class="incompl-section__h2">Todo</h2>
-      <ul id="incompl-tasks" class="incompl-tasks">
-        <li class="tasks-li">
-          <input type="checkbox">
-          <label class="task-name">Pay Bills</label>
-          <input type="text" class="task-name">
-          <button class="tasks-li__edit">Edit</button>
-          <button class="tasks-li__delete">
-            <img class="tasks-li__img" src="./remove.svg" alt="remove">
+      <h2 class="incompl-section__h2 section__h2">Todo</h2>
+      <ul class="incompl-section__tasks tasks-ul" id="incompl-tasks">
+        <li class="incompl-section__task tasks-li">
+          <input class="tasks-li__inp section__inp-check section__inp" type="checkbox">
+          <label class="tasks-li__name section__lab task-name">Pay Bills</label>
+          <input class="tasks-li__inp section__inp section__inp-text task-name" type="text">
+          <button class="tasks-li__edit section__btn">Edit</button>
+          <button class="tasks-li__delete section__btn">
+            <img class="tasks-li__img section__img" src="./remove.svg" alt="remove">
           </button>
         </li>
-        <li class="edit-task">
-          <input type="checkbox">
-          <label class="task-name">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="task-name">
-          <button class="tasks-li__edit">Save</button>
-          <button class="tasks-li__delete">
-            <img class="tasks-li__img" src="./remove.svg" alt="remove">
+        <li class="incompl-section__edit-task tasks-li">
+          <input class="section__inp section__inp-check" type="checkbox">
+          <label class="edit-task__name section__lab task-name">Go Shopping</label>
+          <input class="section__inp section__inp-text task-name" type="text" value="Go Shopping">
+          <button class="tasks-li__edit section__btn">Save</button>
+          <button class="tasks-li__delete section__btn">
+            <img class="tasks-li__img section__img" src="./remove.svg" alt="remove">
           </button>
         </li>
       </ul>
     </section>
     <section class="compl-section">
-      <h2 class="compl-section__h2">Completed</h2>
-      <ul id="compl-tasks" class="compl-tasks">
-        <li class="tasks-li">
-          <input type="checkbox" checked>
-          <label class="task-name">See the Doctor</label>
-          <input type="text" class="task-name">
-          <button class="tasks-li__edit">Edit</button>
-          <button class="tasks-li__delete">
-            <img class="tasks-li__img" src="./remove.svg" alt="remove">
+      <h2 class="compl-section__h2 section__h2">Completed</h2>
+      <ul class="compl-section__tasks tasks-ul" id="compl-tasks">
+        <li class="compl-section__task tasks-li">
+          <input class="tasks-li__inp section__inp-check section__inp" type="checkbox" checked>
+          <label class="tasks-li__name section__lab task-name">See the Doctor</label>
+          <input class="tasks-li__inp section__inp section__inp-text task-name" type="text">
+          <button class="tasks-li__edit section__btn">Edit</button>
+          <button class="tasks-li__delete section__btn">
+            <img class="tasks-li__img section__img" src="./remove.svg" alt="remove">
           </button>
         </li>
       </ul>

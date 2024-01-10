@@ -26,15 +26,18 @@ var createNewTaskElement = function (taskString) {
     var deleteButton = document.createElement("button");//delete button
     var deleteButtonImg = document.createElement("img");//delete button image
     label.innerText = taskString;
-    label.className = 'task-name';
+    label.className = 'tasks-li__name section__lab task-name';
     //Each elements, needs appending
     checkBox.type = "checkbox";
+    checkBox.className = "section__inp section__inp-check";
     editInput.type = "text";
-    editInput.className = "task-name";
+    editInput.className = "section__inp section__inp-text task-name";
     editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className = "tasks-li__edit";
-    deleteButton.className = "tasks-li__delete";
+    editButton.className = "tasks-li__edit section__btn";
+    deleteButton.className = "tasks-li__delete section__btn";
     deleteButtonImg.src = './remove.svg';
+    deleteButtonImg.className = 'tasks-li__img section__img';
+    deleteButtonImg.alt = "remove";
     deleteButton.appendChild(deleteButtonImg);
     listItem.className = "tasks-li";
     //and appending.
@@ -65,7 +68,7 @@ var editTask = function () {
     var editInput = listItem.querySelector('input[type=text]');
     var label = listItem.querySelector("label");
     var editBtn = listItem.querySelector(".tasks-li__edit");
-    var containsClass = listItem.classList.contains("edit-task");
+    var containsClass = listItem.classList.contains("incompl-section__edit-task");
     //If class of the parent is .edit-task
     if (containsClass) {
         //switch to .edit-task
@@ -77,8 +80,8 @@ var editTask = function () {
         editBtn.innerText = "Save";
     }
     //toggle .edit-task on the parent.
-    listItem.classList.toggle("edit-task");
-    listItem.classList.toggle("tasks-li");
+    listItem.classList.toggle("incompl-section__edit-task");
+    // listItem.classList.toggle("tasks-li");
 };
 
 
