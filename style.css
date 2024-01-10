@@ -1,11 +1,11 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
 
-h1{
+.header-section__h1{
 margin: 0;
 }
 
@@ -47,22 +47,22 @@ margin: 0;
   margin-top: 20px;
 }
 
-ul {
+.tasks-ul {
   margin: 0;
   padding: 0px;
 }
 
-li,
-h2 {
+.tasks-li,
+.section__h2 {
   list-style: none;
 }
 
-input,
-button {
+.section__inp,
+.section__btn {
   outline: none;
 }
 
-button {
+.section__btn {
   background: none;
   border: 0px;
   color: #888;
@@ -72,13 +72,12 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.section__btn:hover {
   color: #3a3a3a;
 }
 
 /* Heading */
-h2,
-label[for="new-task"] {
+.section__h2 {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -88,7 +87,7 @@ label[for="new-task"] {
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.section__inp-text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -101,14 +100,13 @@ input[type="text"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+.section__inp-text:focus {
   color: #333;
 }
 
 /* New Task */
 .new-task {
   display: block;
-  margin: 0 0 20px;
 }
 
 .new-task {
@@ -116,7 +114,7 @@ input[type="text"]:focus {
 }
 
 /* Task list */
-li {
+.tasks-li {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -125,51 +123,51 @@ li {
   align-items: center;
 }
 
-li>* {
+.tasks-li>* {
   vertical-align: middle;
 }
 
-li>input[type="checkbox"] {
+.tasks-li>.section__inp-check {
   margin: 0 10px;
 }
 
-li>label {
+.tasks-li>.section__lab {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-li>input[type="text"] {
+.tasks-li>.section__inp-text {
   width: 226px;
 }
 
-.tasks-li__delete img {
+.tasks-li__delete .section__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.tasks-li__delete img:hover {
+.tasks-li__delete .section__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.compl-tasks label {
+.compl-section__tasks .section__lab {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-li input[type="text"] {
+.tasks-li .section__inp-text {
   display: none;
 }
 
-.edit-task input[type="text"] {
+.incompl-section__edit-task .section__inp-text {
   display: inline-block;
   width: 224px;
 }
 
-.edit-task label {
+.incompl-section__edit-task .section__lab {
   display: none;
 }
